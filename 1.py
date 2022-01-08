@@ -39,6 +39,7 @@ v = np.array([6, 7, 8, 9])
 w = np.array([[3, 2, 4], [5, 0, 1]])
 x = np.array([41, 42, 43, 44])
 y = np.array([1, 3, 5, 7])
+z = [True, False, True, False]
 
 # print(a)
 # print(type(a))
@@ -218,44 +219,82 @@ y = np.array([1, 3, 5, 7])
 # y = np.searchsorted(v, [2, 4, 6])
 # print(y)
 
-print(np.sort(l))
-print(np.sort(s))
-print(np.sort(u))
-print(np.sort(w))
+# print(np.sort(l))
+# print(np.sort(s))
+# print(np.sort(u))
+# print(np.sort(w))
 
-z = []
+# z = []
 
-for element in x:
-    if element > 42:
-        z.append(True)
-    else:
-        z.append(False)
+# for element in x:
+#     if element > 42:
+#         z.append(True)
+#     else:
+#         z.append(False)
+
+# aa = x[z]
+
+# print(z)
+# print(aa)
+
+
+# ab = []
+
+# for element in a:
+#     if element % 2 == 0:
+#         ab.append(True)
+#     else:
+#         ab.append(False)
+    
+# ac = a[ab]
+
+# print(ab)
+# print(ac)
+
+# ad = x > 42
+# ae = x[ad]
+# print(ad)
+# print(ae)
+
+# af = a % 2 == 0
+# ag = a[af]
+# print(af)
+# print(ag)
 
 aa = x[z]
-
-print(z)
 print(aa)
-
 
 ab = []
 
-for element in a:
-    if element % 2 == 0:
+for element in x:
+    if element > 42:
         ab.append(True)
     else:
         ab.append(False)
-    
-ac = a[ab]
+
+ac = x[ab]
 
 print(ab)
 print(ac)
 
-ad = x > 42
-ae = x[ad]
+ad = []
+for element in a:
+    if element % 2 == 0:
+        ad.append(True)
+    else:
+        ad.append(False)
+
+ae = a[ad]
+
 print(ad)
 print(ae)
 
-af = a % 2 == 0
-ag = a[af]
+af = x > 42
+ag = x[af]
 print(af)
 print(ag)
+
+ah = a % 2 == 0
+ai = a[ah]
+print(ah)
+print(ai)
