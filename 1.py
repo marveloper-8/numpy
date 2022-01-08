@@ -7,15 +7,19 @@
 import numpy as np
 # print(np.__version__)
 a = np.array([1, 2, 3, 4, 5, 6, 7])
+b = np.array([1, 2, 3, 4], ndmin=5)
 # b = np.array((1, 2, 3, 4, 5))
 c = np.array(42)
 d = np.array([[1, 2, 3, 4, 5], [6, 7, 8, 9, 10]])
 e = np.array([[[1, 2, 3], [4, 5, 6]], [[7, 8, 9], [10, 11, 12]]])
+f = np.array([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12])
 g = np.array(['apple', 'banana', 'cherry'])
 h = np.array([1, 2, 3, 4], dtype='S')
 i = np.array([1, 2, 3, 4], dtype='i4')
 j = np.array([1.1, 2.1, 3.1])
 m = np.array([1, 0, 3])
+n = np.array([1, 2, 3, 4, 5, 6, 7, 8])
+p = np.array([[1, 2, 3], [4, 5, 6]])
 
 # print(a)
 # print(type(a))
@@ -76,15 +80,33 @@ m = np.array([1, 0, 3])
 # print(n)
 # print(n.dtype)
 
-b = a.copy()
-a[0] = 42
-print(a)
-print(b)
+# b = a.copy()
+# a[0] = 42
+# print(a)
+# print(b)
 
-f = a.view()
-print(f)
-f[0] = 31
-print(f)
+# f = a.view()
+# print(f)
+# f[0] = 31
+# print(f)
 
-print(b.base)
-print(f.base)
+# print(b.base)
+# print(f.base)
+
+# print(d.shape)
+# print(b)
+# print('shape of array :', b.shape)
+
+k = f.reshape(4, 3)
+print(k)
+
+l = f.reshape(2, 3, 2)
+print(l)
+
+print(n.reshape(2, 4).base)
+
+o = n.reshape(2, 2, -1)
+print(o)
+
+q = p.reshape(-1)
+print(q)
