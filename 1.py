@@ -17,6 +17,7 @@ g = np.array(['apple', 'banana', 'cherry'])
 h = np.array([1, 2, 3, 4], dtype='S')
 i = np.array([1, 2, 3, 4], dtype='i4')
 j = np.array([1.1, 2.1, 3.1])
+k = np.array([1, 2, 3, 4, 5, 4, 4])
 m = np.array([1, 0, 3])
 n = np.array([1, 2, 3, 4, 5, 6, 7, 8])
 o = np.array([1, 2, 3])
@@ -31,6 +32,8 @@ t = np.array([
     [13, 14, 15],
     [16, 17, 18]
 ])
+v = np.array([6, 7, 8, 9])
+y = np.array([1, 3, 5, 7])
 
 # print(a)
 # print(type(a))
@@ -170,24 +173,42 @@ t = np.array([
 # u = np.dstack((o, q))
 # print(u)
 
-k = np.array_split(a, 3)
-print(k)
+# k = np.array_split(a, 3)
+# print(k)
 
-l = np.array_split(a, 4)
+# l = np.array_split(a, 4)
+# print(l)
+
+# print(k[0])
+# print(k[1])
+# print(k[2])
+
+# s = np.array_split(r, 3)
+# print(s)
+
+# u = np.array_split(t, 3)
+# print(u)
+
+# v = np.array_split(t, 3, axis=1)
+# print(v)
+
+# w = np.hsplit(t, 3)
+# print(w)
+
+l = np.where(k == 4)
 print(l)
 
-print(k[0])
-print(k[1])
-print(k[2])
-
-s = np.array_split(r, 3)
+s = np.where(a%2 == 0)
 print(s)
 
-u = np.array_split(t, 3)
+u = np.where(a%2 == 1)
 print(u)
 
-v = np.array_split(t, 3, axis=1)
-print(v)
-
-w = np.hsplit(t, 3)
+w = np.searchsorted(v, 7)
 print(w)
+
+x = np.searchsorted(v, 7, side='right')
+print(x)
+
+y = np.searchsorted(v, [2, 4, 6])
+print(y)
