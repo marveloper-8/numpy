@@ -18,12 +18,14 @@ h = np.array([1, 2, 3, 4], dtype='S')
 i = np.array([1, 2, 3, 4], dtype='i4')
 j = np.array([1.1, 2.1, 3.1])
 k = np.array([1, 2, 3, 4, 5, 4, 4])
+l = np.array([3, 2, 0, 1])
 m = np.array([1, 0, 3])
 n = np.array([1, 2, 3, 4, 5, 6, 7, 8])
 o = np.array([1, 2, 3])
 p = np.array([[1, 2, 3], [4, 5, 6]])
 q = np.array([4, 5, 6])
 r = np.array([[1, 2], [3, 4], [5, 6], [7, 8], [9, 10], [11, 12]])
+s = np.array(['banana', 'cherry', 'apple'])
 t = np.array([
     [1, 2, 3],
     [4, 5, 6],
@@ -32,7 +34,10 @@ t = np.array([
     [13, 14, 15],
     [16, 17, 18]
 ])
+u = np.array([True, False, True])
 v = np.array([6, 7, 8, 9])
+w = np.array([[3, 2, 4], [5, 0, 1]])
+x = np.array([41, 42, 43, 44])
 y = np.array([1, 3, 5, 7])
 
 # print(a)
@@ -195,20 +200,62 @@ y = np.array([1, 3, 5, 7])
 # w = np.hsplit(t, 3)
 # print(w)
 
-l = np.where(k == 4)
-print(l)
+# l = np.where(k == 4)
+# print(l)
 
-s = np.where(a%2 == 0)
-print(s)
+# s = np.where(a%2 == 0)
+# print(s)
 
-u = np.where(a%2 == 1)
-print(u)
+# u = np.where(a%2 == 1)
+# print(u)
 
-w = np.searchsorted(v, 7)
-print(w)
+# w = np.searchsorted(v, 7)
+# print(w)
 
-x = np.searchsorted(v, 7, side='right')
-print(x)
+# x = np.searchsorted(v, 7, side='right')
+# print(x)
 
-y = np.searchsorted(v, [2, 4, 6])
-print(y)
+# y = np.searchsorted(v, [2, 4, 6])
+# print(y)
+
+print(np.sort(l))
+print(np.sort(s))
+print(np.sort(u))
+print(np.sort(w))
+
+z = []
+
+for element in x:
+    if element > 42:
+        z.append(True)
+    else:
+        z.append(False)
+
+aa = x[z]
+
+print(z)
+print(aa)
+
+
+ab = []
+
+for element in a:
+    if element % 2 == 0:
+        ab.append(True)
+    else:
+        ab.append(False)
+    
+ac = a[ab]
+
+print(ab)
+print(ac)
+
+ad = x > 42
+ae = x[ad]
+print(ad)
+print(ae)
+
+af = a % 2 == 0
+ag = a[af]
+print(af)
+print(ag)
