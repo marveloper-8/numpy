@@ -97,16 +97,46 @@ p = np.array([[1, 2, 3], [4, 5, 6]])
 # print(b)
 # print('shape of array :', b.shape)
 
-k = f.reshape(4, 3)
-print(k)
+# k = f.reshape(4, 3)
+# print(k)
 
-l = f.reshape(2, 3, 2)
-print(l)
+# l = f.reshape(2, 3, 2)
+# print(l)
 
-print(n.reshape(2, 4).base)
+# print(n.reshape(2, 4).base)
 
-o = n.reshape(2, 2, -1)
-print(o)
+# o = n.reshape(2, 2, -1)
+# print(o)
 
-q = p.reshape(-1)
-print(q)
+# q = p.reshape(-1)
+# print(q)
+
+for x in a:
+    print(x)
+
+for x in d:
+    print(x)
+
+for x in d:
+    for y in x:
+        print(y)
+
+for x in e:
+    print(x)
+
+for x in e:
+    for y in x:
+        for z in y:
+            print(z)
+
+for x in np.nditer(e):
+    print(x)
+
+for x in np.nditer(a, flags=['buffered'], op_dtypes=['S']):
+    print(x)
+
+for idx, x in np.ndenumerate(a):
+    print(idx, x)
+
+for idx, x in np.ndenumerate(d):
+    print(idx, x)
