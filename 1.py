@@ -7,19 +7,25 @@
 import numpy as np
 # print(np.__version__)
 a = np.array([1, 2, 3, 4, 5, 6, 7])
+# b = np.array((1, 2, 3, 4, 5))
+c = np.array(42)
+d = np.array([[1, 2, 3, 4, 5], [6, 7, 8, 9, 10]])
+e = np.array([[[1, 2, 3], [4, 5, 6]], [[7, 8, 9], [10, 11, 12]]])
+g = np.array(['apple', 'banana', 'cherry'])
+h = np.array([1, 2, 3, 4], dtype='S')
+i = np.array([1, 2, 3, 4], dtype='i4')
+j = np.array([1.1, 2.1, 3.1])
+m = np.array([1, 0, 3])
+
 # print(a)
 # print(type(a))
 
-# b = np.array((1, 2, 3, 4, 5))
 # print(b)
 
-c = np.array(42)
 # print(c)
 
-d = np.array([[1, 2, 3, 4, 5], [6, 7, 8, 9, 10]])
 # print(d)
 
-e = np.array([[[1, 2, 3], [4, 5, 6]], [[7, 8, 9], [10, 11, 12]]])
 # print(e)
 
 # print(c.ndim)
@@ -52,3 +58,20 @@ e = np.array([[[1, 2, 3], [4, 5, 6]], [[7, 8, 9], [10, 11, 12]]])
 # print(d[0:2, 1:4])
 
 print(a.dtype)
+print(g.dtype)
+print(h)
+print(h.dtype)
+print(i)
+print(i.dtype)
+
+k = j.astype('i')
+print(k)
+print(k.dtype)
+
+l = j.astype(int)
+print(l)
+print(l.dtype)
+
+n = m.astype(bool)
+print(n)
+print(n.dtype)
