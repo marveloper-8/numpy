@@ -22,6 +22,15 @@ n = np.array([1, 2, 3, 4, 5, 6, 7, 8])
 o = np.array([1, 2, 3])
 p = np.array([[1, 2, 3], [4, 5, 6]])
 q = np.array([4, 5, 6])
+r = np.array([[1, 2], [3, 4], [5, 6], [7, 8], [9, 10], [11, 12]])
+t = np.array([
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9],
+    [10, 11, 12],
+    [13, 14, 15],
+    [16, 17, 18]
+])
 
 # print(a)
 # print(type(a))
@@ -143,20 +152,42 @@ q = np.array([4, 5, 6])
 # for idx, x in np.ndenumerate(d):
 #     print(idx, x)
 
-k = np.concatenate((a, n))
+# k = np.concatenate((a, n))
+# print(k)
+
+# l = np.concatenate((d, p), axis=1)
+# print(l)
+
+# r = np.stack((o, q), axis=1)
+# print(r)
+
+# s = np.hstack((o, q))
+# print(s)
+
+# t = np.vstack((o, q))
+# print(t)
+
+# u = np.dstack((o, q))
+# print(u)
+
+k = np.array_split(a, 3)
 print(k)
 
-l = np.concatenate((d, p), axis=1)
+l = np.array_split(a, 4)
 print(l)
 
-r = np.stack((o, q), axis=1)
-print(r)
+print(k[0])
+print(k[1])
+print(k[2])
 
-s = np.hstack((o, q))
+s = np.array_split(r, 3)
 print(s)
 
-t = np.vstack((o, q))
-print(t)
-
-u = np.dstack((o, q))
+u = np.array_split(t, 3)
 print(u)
+
+v = np.array_split(t, 3, axis=1)
+print(v)
+
+w = np.hsplit(t, 3)
+print(w)
