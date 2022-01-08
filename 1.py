@@ -19,7 +19,9 @@ i = np.array([1, 2, 3, 4], dtype='i4')
 j = np.array([1.1, 2.1, 3.1])
 m = np.array([1, 0, 3])
 n = np.array([1, 2, 3, 4, 5, 6, 7, 8])
+o = np.array([1, 2, 3])
 p = np.array([[1, 2, 3], [4, 5, 6]])
+q = np.array([4, 5, 6])
 
 # print(a)
 # print(type(a))
@@ -111,32 +113,50 @@ p = np.array([[1, 2, 3], [4, 5, 6]])
 # q = p.reshape(-1)
 # print(q)
 
-for x in a:
-    print(x)
+# for x in a:
+#     print(x)
 
-for x in d:
-    print(x)
+# for x in d:
+#     print(x)
 
-for x in d:
-    for y in x:
-        print(y)
+# for x in d:
+#     for y in x:
+#         print(y)
 
-for x in e:
-    print(x)
+# for x in e:
+#     print(x)
 
-for x in e:
-    for y in x:
-        for z in y:
-            print(z)
+# for x in e:
+#     for y in x:
+#         for z in y:
+#             print(z)
 
-for x in np.nditer(e):
-    print(x)
+# for x in np.nditer(e):
+#     print(x)
 
-for x in np.nditer(a, flags=['buffered'], op_dtypes=['S']):
-    print(x)
+# for x in np.nditer(a, flags=['buffered'], op_dtypes=['S']):
+#     print(x)
 
-for idx, x in np.ndenumerate(a):
-    print(idx, x)
+# for idx, x in np.ndenumerate(a):
+#     print(idx, x)
 
-for idx, x in np.ndenumerate(d):
-    print(idx, x)
+# for idx, x in np.ndenumerate(d):
+#     print(idx, x)
+
+k = np.concatenate((a, n))
+print(k)
+
+l = np.concatenate((d, p), axis=1)
+print(l)
+
+r = np.stack((o, q), axis=1)
+print(r)
+
+s = np.hstack((o, q))
+print(s)
+
+t = np.vstack((o, q))
+print(t)
+
+u = np.dstack((o, q))
+print(u)
