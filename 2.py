@@ -73,13 +73,23 @@ from numpy import random
 # a = random.chisquare(df=2, size=(2, 3))
 # print(a)
 
+# a = random.rayleigh(scale=2, size=(2, 3))
+# print(a)
+
+# a = random.pareto(a=2, size=(2, 3))
+# print(a)
+
 from numpy import random
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-sns.distplot(random.chisquare(df=1, size=1000), hist=False)
+sns.distplot(random.pareto(a=2, size=1000), kde=False)
 
 plt.show()
+
+# sns.distplot(random.rayleigh(size=1000), hist=False)
+
+# sns.distplot(random.chisquare(df=1, size=1000), hist=False)
 
 # sns.distplot(random.exponential(size=1000), hist=False)
 
