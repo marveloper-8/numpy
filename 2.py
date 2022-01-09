@@ -76,16 +76,16 @@ from numpy import random
 # a = random.rayleigh(scale=2, size=(2, 3))
 # print(a)
 
-# a = random.pareto(a=2, size=(2, 3))
-# print(a)
+a = random.pareto(a=2, size=(2, 3))
+print(a)
 
-from numpy import random
-import matplotlib.pyplot as plt
-import seaborn as sns
+# from numpy import random
+# import matplotlib.pyplot as plt
+# import seaborn as sns
 
-sns.distplot(random.pareto(a=2, size=1000), kde=False)
+# sns.distplot(random.pareto(a=2, size=1000), kde=False)
 
-plt.show()
+# plt.show()
 
 # sns.distplot(random.rayleigh(size=1000), hist=False)
 
