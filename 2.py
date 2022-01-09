@@ -58,8 +58,8 @@ from numpy import random
 # a = random.poisson(lam=2, size=10)
 # print(a)
 
-a = random.uniform(size=(2, 3))
-print(a)
+# a = random.uniform(size=(2, 3))
+# print(a)
 
 # a = random.logistic(loc=1, scale=2, size=(2, 3))
 # print(a)
@@ -78,6 +78,9 @@ print(a)
 
 # a = random.pareto(a=2, size=(2, 3))
 # print(a)
+
+a = random.zipf(a=2, size=(2, 3))
+print(a)
 
 # from numpy import random
 # import matplotlib.pyplot as plt
