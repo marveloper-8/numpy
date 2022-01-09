@@ -1,4 +1,5 @@
-from numpy import random
+# from numpy import random
+# import numpy as np
 
 # a = random.randint(100)
 # print(a)
@@ -24,8 +25,30 @@ from numpy import random
 # h = random.choice([3, 5, 7, 9], size=(3, 5))
 # print(h)
 
-a = random.choice([3, 5, 7, 9], p=[0.1, 0.3, 0.6, 0.0], size=(100))
+# a = random.choice([3, 5, 7, 9], p=[0.1, 0.3, 0.6, 0.0], size=(100))
+# print(a)
+
+# b = random.choice([3, 5, 7, 9], p=[0.1, 0.3, 0.6, 0.0], size=(3, 5))
+# print(b)
+
+# a = np.array([1, 2, 3, 4, 5])
+# random.shuffle(a)
+# print(a)
+
+# print(random.permutation(a))
+
+# import matplotlib as mpl
+# mpl.use('TkAgg')
+# import seaborn as sns
+# import matplotlib.pyplot as plt
+
+# sns.distplot([0, 1, 2, 3, 4, 5])
+# plt.show()
+
+from numpy import random
+a = random.normal(size=(2, 3))
 print(a)
 
-b = random.choice([3, 5, 7, 9], p=[0.1, 0.3, 0.6, 0.0], size=(3, 5))
+b = random.normal(loc=1, scale=2, size=(2, 3))
 print(b)
+
