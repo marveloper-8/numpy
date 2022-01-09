@@ -61,20 +61,21 @@ from numpy import random
 # a = random.uniform(size=(2, 3))
 # print(a)
 
-# from numpy import random
-# import matplotlib.pyplot as plt
-# import seaborn as sns
-
-# sns.distplot(random.normal(size=1000), hist=False)
-# plt.show()
+a = random.logistic(loc=1, scale=2, size=(2, 3))
+print(a)
 
 from numpy import random
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-sns.distplot(random.uniform(size=1000), hist=False)
+sns.distplot(random.normal(scale=2, size=1000), hist=False, label='normal')
+sns.distplot(random.logistic(size=1000), hist=False, label='logistic')
 
 plt.show()
+
+# sns.distplot(random.logistic(size=1000), hist=False)
+
+# sns.distplot(random.uniform(size=1000), hist=False)
 
 # sns.distplot(random.binomial(n=1000, p=0.01, size=1000), hist=False, label='binomial')
 # sns.distplot(random.poisson(lam=10, size=1000), hist=False, label='poisson')
