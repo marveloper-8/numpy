@@ -61,11 +61,11 @@ from numpy import random
 # a = random.uniform(size=(2, 3))
 # print(a)
 
-# a = random.logistic(loc=1, scale=2, size=(2, 3))
-# print(a)
-
-a = random.multinomial(n=6, pvals=[1/6, 1/6, 1/6, 1/6, 1/6, 1/6])
+a = random.logistic(loc=1, scale=2, size=(2, 3))
 print(a)
+
+# a = random.multinomial(n=6, pvals=[1/6, 1/6, 1/6, 1/6, 1/6, 1/6])
+# print(a)
 
 # a = random.exponential(scale=2, size=(2,3))
 # print(a)
