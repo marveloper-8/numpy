@@ -46,9 +46,11 @@
 # plt.show()
 
 from numpy import random
-a = random.normal(size=(2, 3))
+# a = random.normal(size=(2, 3))
+# print(a)
+
+# b = random.normal(loc=1, scale=2, size=(2, 3))
+# print(b)
+
+a = random.binomial(n=10, p=0.5, size=10)
 print(a)
-
-b = random.normal(loc=1, scale=2, size=(2, 3))
-print(b)
-
