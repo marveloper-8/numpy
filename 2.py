@@ -70,13 +70,18 @@ from numpy import random
 # a = random.exponential(scale=2, size=(2,3))
 # print(a)
 
+# a = random.chisquare(df=2, size=(2, 3))
+# print(a)
+
 from numpy import random
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-sns.distplot(random.exponential(size=1000), hist=False)
+sns.distplot(random.chisquare(df=1, size=1000), hist=False)
 
 plt.show()
+
+# sns.distplot(random.exponential(size=1000), hist=False)
 
 # sns.distplot(random.normal(scale=2, size=1000), hist=False, label='normal')
 # sns.distplot(random.logistic(size=1000), hist=False, label='logistic')
