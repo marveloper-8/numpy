@@ -39,8 +39,8 @@
 
 # import matplotlib as mpl
 # mpl.use('TkAgg')
-# import seaborn as sns
 # import matplotlib.pyplot as plt
+# import seaborn as sns
 
 # sns.distplot([0, 1, 2, 3, 4, 5])
 # plt.show()
@@ -55,5 +55,15 @@ from numpy import random
 # a = random.binomial(n=10, p=0.5, size=10)
 # print(a)
 
-a = random.poisson(lam=2, size=10)
-print(a)
+# a = random.poisson(lam=2, size=10)
+# print(a)
+
+# a = random.uniform(size=(2, 3))
+# print(a)
+
+from numpy import random
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+sns.distplot(random.normal(size=1000), hist=False)
+plt.show()
