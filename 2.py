@@ -73,11 +73,11 @@ from numpy import random
 # a = random.chisquare(df=2, size=(2, 3))
 # print(a)
 
-# a = random.rayleigh(scale=2, size=(2, 3))
-# print(a)
-
-a = random.pareto(a=2, size=(2, 3))
+a = random.rayleigh(scale=2, size=(2, 3))
 print(a)
+
+# a = random.pareto(a=2, size=(2, 3))
+# print(a)
 
 # from numpy import random
 # import matplotlib.pyplot as plt
