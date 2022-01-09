@@ -58,11 +58,11 @@ from numpy import random
 # a = random.poisson(lam=2, size=10)
 # print(a)
 
-# a = random.uniform(size=(2, 3))
-# print(a)
-
-a = random.logistic(loc=1, scale=2, size=(2, 3))
+a = random.uniform(size=(2, 3))
 print(a)
+
+# a = random.logistic(loc=1, scale=2, size=(2, 3))
+# print(a)
 
 # a = random.multinomial(n=6, pvals=[1/6, 1/6, 1/6, 1/6, 1/6, 1/6])
 # print(a)
