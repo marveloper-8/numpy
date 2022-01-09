@@ -52,5 +52,8 @@ from numpy import random
 # b = random.normal(loc=1, scale=2, size=(2, 3))
 # print(b)
 
-a = random.binomial(n=10, p=0.5, size=10)
+# a = random.binomial(n=10, p=0.5, size=10)
+# print(a)
+
+a = random.poisson(lam=2, size=10)
 print(a)
