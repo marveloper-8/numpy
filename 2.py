@@ -70,11 +70,11 @@ from numpy import random
 # a = random.exponential(scale=2, size=(2,3))
 # print(a)
 
-# a = random.chisquare(df=2, size=(2, 3))
-# print(a)
-
-a = random.rayleigh(scale=2, size=(2, 3))
+a = random.chisquare(df=2, size=(2, 3))
 print(a)
+
+# a = random.rayleigh(scale=2, size=(2, 3))
+# print(a)
 
 # a = random.pareto(a=2, size=(2, 3))
 # print(a)
