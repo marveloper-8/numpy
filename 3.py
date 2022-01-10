@@ -1,4 +1,4 @@
-import numpy as np
+# import numpy as np
 
 #normal python ufunc
 # a = [1, 2, 3, 4]
@@ -29,13 +29,13 @@ import numpy as np
 # else:
 #     print('add is not ufunc')
 
-e = np.array([10, 11, 12, 13, 14, 15])
-f = np.array([20, 21, 22, 23, 24, 25])
-g = np.array([10, 20, 30, 40, 50, 60])
-h = np.array([3, 5, 10, 8, 2, 33])
-i = np.array([3, 5, 6, 8, 2, 33])
-j = np.array([3, 7, 9, 8, 2, 33])
-n = np.array([-1, -2, 1, 2, 3, -4])
+# e = np.array([10, 11, 12, 13, 14, 15])
+# f = np.array([20, 21, 22, 23, 24, 25])
+# g = np.array([10, 20, 30, 40, 50, 60])
+# h = np.array([3, 5, 10, 8, 2, 33])
+# i = np.array([3, 5, 6, 8, 2, 33])
+# j = np.array([3, 7, 9, 8, 2, 33])
+# n = np.array([-1, -2, 1, 2, 3, -4])
 
 # g = np.add(e, f)
 # print(g)
@@ -52,14 +52,19 @@ n = np.array([-1, -2, 1, 2, 3, -4])
 # j = np.power(g, i)
 # print(j)
 
-k = np.mod(g, j)
-print(k)
+# k = np.mod(g, j)
+# print(k)
 
-l = np.remainder(g, j)
-print(l)
+# l = np.remainder(g, j)
+# print(l)
 
-m = np.divmod(g, j)
-print(m)
+# m = np.divmod(g, j)
+# print(m)
 
-o = np.absolute(n)
-print(o)
+# o = np.absolute(n)
+# print(o)
+
+import numpy as np
+
+a = np.trunc([-3.1666, 3.6667])
+print(a)
