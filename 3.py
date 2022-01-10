@@ -75,5 +75,5 @@ print(b)
 c = np.around(3.1666, 2)
 print(c)
 
-# d = np.floor([-3.1666, 3.6667])
-# print(d)
+d = np.floor([-3.1666, 3.6667])
+print(d)
