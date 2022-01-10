@@ -66,17 +66,20 @@
 
 import numpy as np
 
-a = np.trunc([-3.1666, 3.6667])
-print(a)
+# a = np.trunc([-3.1666, 3.6667])
+# print(a)
 
-b = np.fix([-3.1666, 3.6667])
-print(b)
+# b = np.fix([-3.1666, 3.6667])
+# print(b)
 
-c = np.around(3.1666, 2)
-print(c)
+# c = np.around(3.1666, 2)
+# print(c)
 
-d = np.floor([-3.1666, 3.6667])
-print(d)
+# d = np.floor([-3.1666, 3.6667])
+# print(d)
 
-e = np.ceil([-3.1666, 3.6667])
-print(e)
+# e = np.ceil([-3.1666, 3.6667])
+# print(e)
+
+a = np.arange(1, 10)
+print(np.log2(a))
