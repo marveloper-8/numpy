@@ -77,3 +77,6 @@ print(c)
 
 d = np.floor([-3.1666, 3.6667])
 print(d)
+
+e = np.ceil([-3.1666, 3.6667])
+print(e)
