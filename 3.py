@@ -64,6 +64,7 @@
 # o = np.absolute(n)
 # print(o)
 
+from math import log
 import numpy as np
 
 # a = np.trunc([-3.1666, 3.6667])
@@ -89,3 +90,6 @@ print(np.log10(b))
 
 c = np.arange(1, 10)
 print(np.log(c))
+
+d = np.frompyfunc(log, 2, 1)
+print(d(100, 15))
