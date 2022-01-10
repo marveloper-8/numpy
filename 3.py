@@ -86,3 +86,6 @@ print(np.log2(a))
 
 b = np.arange(1, 10)
 print(np.log10(b))
+
+c = np.arange(1, 10)
+print(np.log(c))
