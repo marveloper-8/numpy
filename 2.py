@@ -82,14 +82,14 @@ from numpy import random
 # a = random.zipf(a=2, size=(2, 3))
 # print(a)
 
-from numpy import random
-import matplotlib.pyplot as plt
-import seaborn as sns
+# from numpy import random
+# import matplotlib.pyplot as plt
+# import seaborn as sns
 
-a = random.zipf(a=2, size=1000)
-sns.distplot(a[a<10], kde=False)
+# a = random.zipf(a=2, size=1000)
+# sns.distplot(a[a<10], kde=False)
 
-plt.show()
+# plt.show()
 
 # sns.distplot(random.pareto(a=2, size=1000), kde=False)
 
