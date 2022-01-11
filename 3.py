@@ -91,20 +91,24 @@
 # d = np.frompyfunc(log, 2, 1)
 # print(d(100, 15))
 
+# a = np.array([1, 2, 3])
+# b = np.array([1, 2, 3])
+
+# c = np.add(a, b)
+# print(c)
+
+# d = np.sum([a, b])
+# print(d)
+
+# e = np.sum([a, b], axis=1)
+# print(e)
+
+# f = np.cumsum(a)
+# print(f)
+
 from math import log
 import numpy as np
 
-a = np.array([1, 2, 3])
-b = np.array([1, 2, 3])
-
-c = np.add(a, b)
-print(c)
-
-d = np.sum([a, b])
-print(d)
-
-e = np.sum([a, b], axis=1)
-print(e)
-
-f = np.cumsum(a)
-print(f)
+a = np.array([1, 2, 3, 4])
+b = np.prod(a)
+print(b)
