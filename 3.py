@@ -103,8 +103,8 @@ print(c)
 d = np.sum([a, b])
 print(d)
 
-# e = np.sum([a, b], axis=1)
-# print(e)
+e = np.sum([a, b], axis=1)
+print(e)
 
 # f = np.cumsum(a)
 # print(f)
