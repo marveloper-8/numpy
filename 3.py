@@ -128,5 +128,7 @@ import numpy as np
 
 a = np.array([10, 15, 25, 5])
 b = np.diff(a)
-
 print(b)
+
+c = np.diff(a, n=2)
+print(c)
