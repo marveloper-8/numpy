@@ -211,3 +211,6 @@ b = np.array([
 ])
 c = np.cosh(b)
 print(c)
+
+d = np.arcsinh(1.0)
+print(d)
