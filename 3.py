@@ -172,3 +172,7 @@ b = np.array([
 ])
 c = np.sin(b)
 print(c)
+
+d = np.array([90, 180, 270, 360])
+e = np.deg2rad(d)
+print(e)
