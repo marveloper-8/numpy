@@ -154,3 +154,7 @@ b = 9
 
 c = np.gcd(a, b)
 print(c)
+
+d = np.array([20, 8, 32, 36, 16])
+e = np.gcd.reduce(d)
+print(e)
