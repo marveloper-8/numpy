@@ -230,3 +230,5 @@ d = np.array([3, 4, 5, 6])
 e = np.union1d(c, d)
 print(e)
 
+f = np.intersect1d(c, d, assume_unique=True)
+print(f)
