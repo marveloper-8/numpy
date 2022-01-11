@@ -159,41 +159,46 @@
 # e = np.gcd.reduce(d)
 # print(e)
 
+# import numpy as np
+
+# a = np.sin(np.pi/2)
+# print(a)
+
+# b = np.array([
+#     np.pi/2,
+#     np.pi/3,
+#     np.pi/4,
+#     np.pi/5
+# ])
+# c = np.sin(b)
+# print(c)
+
+# d = np.array([90, 180, 270, 360])
+# e = np.deg2rad(d)
+# print(e)
+
+# f = np.array([
+#     np.pi/2,
+#     np.pi,
+#     1.5*np.pi,
+#     2*np.pi
+# ])
+# g = np.rad2deg(f)
+# print(g)
+
+# h = np.arcsin(1.0)
+# print(h)
+
+# i = np.array([1, -1, 0.1])
+# j = np.arcsin(i)
+# print(j)
+
+# k = 3
+# l = 4
+# m = np.hypot(k, l)
+# print(m)
+
 import numpy as np
 
-a = np.sin(np.pi/2)
+a = np.sinh(np.pi/2)
 print(a)
-
-b = np.array([
-    np.pi/2,
-    np.pi/3,
-    np.pi/4,
-    np.pi/5
-])
-c = np.sin(b)
-print(c)
-
-d = np.array([90, 180, 270, 360])
-e = np.deg2rad(d)
-print(e)
-
-f = np.array([
-    np.pi/2,
-    np.pi,
-    1.5*np.pi,
-    2*np.pi
-])
-g = np.rad2deg(f)
-print(g)
-
-h = np.arcsin(1.0)
-print(h)
-
-i = np.array([1, -1, 0.1])
-j = np.arcsin(i)
-print(j)
-
-k = 3
-l = 4
-m = np.hypot(k, l)
-print(m)
