@@ -139,9 +139,9 @@ a, b = 4, 6
 c = np.lcm(a, b)
 print(c)
 
-# d = np.array([3, 6, 9])
-# e = np.lcm.reduce(d)
-# print(e)
+d = np.array([3, 6, 9])
+e = np.lcm.reduce(d)
+print(e)
 
 # f = np.arange(1, 11)
 # g = np.lcm.reduce(f)
