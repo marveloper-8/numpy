@@ -110,5 +110,13 @@ from math import log
 import numpy as np
 
 a = np.array([1, 2, 3, 4])
+c = np.array([5, 6, 7, 8])
+
 b = np.prod(a)
 print(b)
+
+d = np.prod([a, c])
+print(d)
+
+e = np.prod([a, c], axis=1)
+print(e)
