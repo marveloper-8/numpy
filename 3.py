@@ -100,8 +100,8 @@ b = np.array([1, 2, 3])
 c = np.add(a, b)
 print(c)
 
-# d = np.sum([a, b])
-# print(d)
+d = np.sum([a, b])
+print(d)
 
 # e = np.sum([a, b], axis=1)
 # print(e)
