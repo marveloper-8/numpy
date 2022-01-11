@@ -124,11 +124,25 @@
 # f = np.cumprod(c)
 # print(f)
 
+# import numpy as np
+
+# a = np.array([10, 15, 25, 5])
+# b = np.diff(a)
+# print(b)
+
+# c = np.diff(a, n=2)
+# print(c)
+
 import numpy as np
 
-a = np.array([10, 15, 25, 5])
-b = np.diff(a)
-print(b)
-
-c = np.diff(a, n=2)
+a, b = 4, 6
+c = np.lcm(a, b)
 print(c)
+
+# d = np.array([3, 6, 9])
+# e = np.lcm.reduce(d)
+# print(e)
+
+# f = np.arange(1, 11)
+# g = np.lcm.reduce(f)
+# print(g)
