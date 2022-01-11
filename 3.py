@@ -64,9 +64,6 @@
 # o = np.absolute(n)
 # print(o)
 
-from math import log
-import numpy as np
-
 # a = np.trunc([-3.1666, 3.6667])
 # print(a)
 
@@ -82,14 +79,32 @@ import numpy as np
 # e = np.ceil([-3.1666, 3.6667])
 # print(e)
 
-a = np.arange(1, 10)
-print(np.log2(a))
+# a = np.arange(1, 10)
+# print(np.log2(a))
 
-b = np.arange(1, 10)
-print(np.log10(b))
+# b = np.arange(1, 10)
+# print(np.log10(b))
 
-c = np.arange(1, 10)
-print(np.log(c))
+# c = np.arange(1, 10)
+# print(np.log(c))
 
-d = np.frompyfunc(log, 2, 1)
-print(d(100, 15))
+# d = np.frompyfunc(log, 2, 1)
+# print(d(100, 15))
+
+from math import log
+import numpy as np
+
+a = np.array([1, 2, 3])
+b = np.array([1, 2, 3])
+
+c = np.add(a, b)
+print(c)
+
+# d = np.sum([a, b])
+# print(d)
+
+# e = np.sum([a, b], axis=1)
+# print(e)
+
+# f = np.cumsum(a)
+# print(f)
