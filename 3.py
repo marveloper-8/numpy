@@ -198,23 +198,29 @@
 # m = np.hypot(k, l)
 # print(m)
 
+# import numpy as np
+
+# a = np.sinh(np.pi/2)
+# print(a)
+
+# b = np.array([
+#     np.pi/2,
+#     np.pi/3,
+#     np.pi/4,
+#     np.pi/5
+# ])
+# c = np.cosh(b)
+# print(c)
+
+# d = np.arcsinh(1.0)
+# print(d)
+
+# e = np.array([0.1, 0.2, 0.5])
+# f = np.arctanh(e)
+# print(f)
+
 import numpy as np
 
-a = np.sinh(np.pi/2)
-print(a)
-
-b = np.array([
-    np.pi/2,
-    np.pi/3,
-    np.pi/4,
-    np.pi/5
-])
-c = np.cosh(b)
-print(c)
-
-d = np.arcsinh(1.0)
-print(d)
-
-e = np.array([0.1, 0.2, 0.5])
-f = np.arctanh(e)
-print(f)
+a = np.array([1, 1, 1, 2, 3, 4, 5, 5, 6, 7])
+b = np.unique(a)
+print(b)
