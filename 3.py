@@ -236,5 +236,5 @@ print(f)
 g = np.setdiff1d(c, d, assume_unique=True)
 print(g)
 
-# h = np.setxor1d(c, d, assume_unique=True)
-# print(h)
+h = np.setxor1d(c, d, assume_unique=True)
+print(h)
