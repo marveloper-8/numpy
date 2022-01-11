@@ -106,5 +106,5 @@ print(d)
 e = np.sum([a, b], axis=1)
 print(e)
 
-# f = np.cumsum(a)
-# print(f)
+f = np.cumsum(a)
+print(f)
