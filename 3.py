@@ -185,3 +185,7 @@ f = np.array([
 ])
 g = np.rad2deg(f)
 print(g)
+
+h = np.arcsin(1.0)
+print(h)
+
