@@ -176,3 +176,12 @@ print(c)
 d = np.array([90, 180, 270, 360])
 e = np.deg2rad(d)
 print(e)
+
+f = np.array([
+    np.pi/2,
+    np.pi,
+    1.5*np.pi,
+    2*np.pi
+])
+g = np.rad2deg(f)
+print(g)
