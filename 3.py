@@ -133,16 +133,24 @@
 # c = np.diff(a, n=2)
 # print(c)
 
+# import numpy as np
+
+# a, b = 4, 6
+# c = np.lcm(a, b)
+# print(c)
+
+# d = np.array([3, 6, 9])
+# e = np.lcm.reduce(d)
+# print(e)
+
+# f = np.arange(1, 11)
+# g = np.lcm.reduce(f)
+# print(g)
+
 import numpy as np
 
-a, b = 4, 6
-c = np.lcm(a, b)
+a = 6
+b = 9
+
+c = np.gcd(a, b)
 print(c)
-
-d = np.array([3, 6, 9])
-e = np.lcm.reduce(d)
-print(e)
-
-f = np.arange(1, 11)
-g = np.lcm.reduce(f)
-print(g)
