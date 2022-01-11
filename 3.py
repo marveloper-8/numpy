@@ -214,3 +214,7 @@ print(c)
 
 d = np.arcsinh(1.0)
 print(d)
+
+e = np.array([0.1, 0.2, 0.5])
+f = np.arctanh(e)
+print(f)
