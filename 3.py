@@ -147,14 +147,19 @@
 # g = np.lcm.reduce(f)
 # print(g)
 
+# import numpy as np
+
+# a = 6
+# b = 9
+
+# c = np.gcd(a, b)
+# print(c)
+
+# d = np.array([20, 8, 32, 36, 16])
+# e = np.gcd.reduce(d)
+# print(e)
+
 import numpy as np
 
-a = 6
-b = 9
-
-c = np.gcd(a, b)
-print(c)
-
-d = np.array([20, 8, 32, 36, 16])
-e = np.gcd.reduce(d)
-print(e)
+a = np.sin(np.pi/2)
+print(a)
