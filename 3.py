@@ -189,3 +189,11 @@ print(g)
 h = np.arcsin(1.0)
 print(h)
 
+i = np.array([1, -1, 0.1])
+j = np.arcsin(i)
+print(j)
+
+k = 3
+l = 4
+m = np.hypot(k, l)
+print(m)
