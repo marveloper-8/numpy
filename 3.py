@@ -232,3 +232,9 @@ print(e)
 
 f = np.intersect1d(c, d, assume_unique=True)
 print(f)
+
+g = np.setdiff1d(c, d, assume_unique=True)
+print(g)
+
+# h = np.setxor1d(c, d, assume_unique=True)
+# print(h)
