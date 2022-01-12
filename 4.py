@@ -1,4 +1,4 @@
-import pandas as pd
+# import pandas as pd
 
 # a = {
 #     'cars': ['BMW', 'Volvo', 'Ford'],
@@ -7,4 +7,9 @@ import pandas as pd
 # b = pd.DataFrame(a)
 # print(b)
 
-print(pd.__version__)
+# print(pd.__version__)
+
+import pandas as pd
+a = [1, 7, 2]
+b = pd.Series(a)
+print(b)
