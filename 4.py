@@ -26,3 +26,12 @@ d = {
 }
 e = pd.Series(d)
 print(e)
+f = pd.Series(d, index=["day1", "day2"])
+print(f)
+
+g = {
+    "h": [420, 380, 390],
+    "i": [50, 40, 45]
+}
+j = pd.DataFrame(g)
+print(j)
